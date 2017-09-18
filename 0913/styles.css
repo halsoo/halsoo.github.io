@@ -26,13 +26,15 @@ li {
   display : inline;
 }
 
-li a{
+li a {
   color : white;
+  text-decoration: none;
 }
 
-li a : hover {
+/*li a:hover {
   background-color: grey;
-}
+  text-decoration: none;
+}*/
 
 iframe {
   width:900px;
