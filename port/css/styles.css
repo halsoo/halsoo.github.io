@@ -1,0 +1,78 @@
+* { font-family: 'Spoqa Han Sans', helvetica, sans-serif; }
+
+html{
+}
+
+body {
+  margin-top: 40px;
+  margin-left: 1px;
+}
+
+.contents {
+  /*border: 1px solid black;*/
+  left: 250px;
+  position:relative;
+}
+
+.contents-text {
+  /*border: 1px solid black;*/
+  margin-top:30px;
+  margin-left:50px;
+  font-size: 0.9em;
+  font-weight: bold;
+  line-height: 1.6;
+}
+
+.sidebar {
+  /*border: 1px solid black;*/
+  padding-top: 30px;
+  padding-left: 0px;
+  z-index: 1;
+  font-weight: normal;
+  font-size: 0.9em;
+  position: fixed;
+}
+
+.section1 {
+  padding-bottom: 20px;
+}
+
+.section2, .section3, .section4, .section5 {
+  padding: 20px 0;
+}
+
+.section4 li{
+  padding: 2px 0px;
+}
+
+.sidebar a {
+  text-decoration: none;
+}
+
+.sidebar a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.sidebar a:hover, a:active {
+  text-indent: 20px;
+  text-decoration: none;
+  color: #18C29C;
+}
+
+.sidebar ul {
+  list-style-type: none;
+}
+
+
+.sidebar li {
+  text-decoration: none;
+}
+
+footer {
+  clear: both;
+}
