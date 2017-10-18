@@ -23,6 +23,21 @@ body {
   line-height: 1.6;
 }
 
+.drawing-contents {
+  /*border: 1px solid black;*/
+  left: 250px;
+  position:relative;
+}
+
+.drawing-text {
+  /*border: 1px solid black;*/
+  margin-top:30px;
+  margin-left:50px;
+  font-size: 0.9em;
+  font-weight: bold;
+  line-height: 1.6;
+}
+
 .sidebar {
   /*border: 1px solid black;*/
   padding-top: 30px;
