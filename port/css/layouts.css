@@ -9,13 +9,13 @@ body {
 }
 
 .contents {
-  /*border: 1px solid black;*/
+  border: 1px solid black;
   left: 250px;
   position:relative;
 }
 
 .contents-text {
-  /*border: 1px solid black;*/
+  border: 1px solid black;
   margin-top:30px;
   margin-left:50px;
   font-size: 0.9em;
@@ -24,13 +24,18 @@ body {
 }
 
 .drawing-contents {
-  /*border: 1px solid black;*/
+  border: 1px solid black;
   left: 250px;
+  right: auto;
   position:relative;
 }
 
+.drawing-image {
+  display: inline-flex;
+}
+
 .drawing-text {
-  /*border: 1px solid black;*/
+  border: 1px solid black;
   margin-top:30px;
   margin-left:50px;
   font-size: 0.9em;
@@ -39,25 +44,24 @@ body {
 }
 
 .sidebar {
-  /*border: 1px solid black;*/
+  border: 1px solid black;
   padding-top: 30px;
   padding-left: 0px;
   z-index: 1;
   font-weight: normal;
   font-size: 0.9em;
-  position: fixed;
+  position: absolute;
 }
 
-.section1 {
-  padding-bottom: 20px;
+/*.section1, .section2, .section3, .section4, .section5 > li {
+  font-weight: bold;
+}*/
+.sidebar ul {
+  list-style-type: none;
 }
 
-.section2, .section3, .section4, .section5 {
-  padding: 20px 0;
-}
-
-.section4 li{
-  padding: 2px 0px;
+.sidebar li {
+  text-decoration: none;
 }
 
 .sidebar a {
@@ -79,13 +83,16 @@ a:visited {
   color: #18C29C;
 }
 
-.sidebar ul {
-  list-style-type: none;
+.section1 {
+  padding-bottom: 20px;
 }
 
+.section2, .section3, .section4, .section5 {
+  padding: 20px 0;
+}
 
-.sidebar li {
-  text-decoration: none;
+.section4 li{
+  padding: 2px 0px;
 }
 
 footer {
