@@ -9,13 +9,13 @@ body {
 }
 
 .contents {
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   left: 250px;
   position:relative;
 }
 
 .contents-text {
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   margin-top:30px;
   margin-left:50px;
   font-size: 0.9em;
@@ -24,7 +24,7 @@ body {
 }
 
 .drawing-contents {
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   left: 250px;
   right: auto;
   position:relative;
@@ -35,7 +35,7 @@ body {
 }
 
 .drawing-text {
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   margin-top:30px;
   margin-left:50px;
   font-size: 0.9em;
@@ -44,7 +44,7 @@ body {
 }
 
 .sidebar {
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   padding-top: 30px;
   padding-left: 0px;
   z-index: 1;
