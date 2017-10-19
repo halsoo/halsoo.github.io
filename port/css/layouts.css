@@ -4,60 +4,97 @@ html{
 }
 
 body {
-  margin-top: 40px;
-  margin-left: 1px;
+  margin-top: 30px;
+  margin-left: 10px;
+  margin-right: 5px;
 }
 
-.contents {
-  /*border: 1px solid black;*/
-  left: 250px;
-  position:relative;
+.grid {
+  display: grid;
+  grid-template-columns: 202px 4fr;
+  grid-template-rows: 30% 30% 30% 10%;
+  grid-gap: 50px;
 }
 
-.contents-text {
+.grid .contents {
   /*border: 1px solid black;*/
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.grid .contents-text {
+  /*border: 1px solid black;*/
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+
   margin-top:30px;
   margin-left:50px;
   font-size: 0.9em;
-  font-weight: bold;
+  font-weight: normal;
   line-height: 1.6;
+
 }
 
-.drawing-contents {
+.grid .drawing-contents {
   /*border: 1px solid black;*/
-  left: 250px;
-  right: auto;
-  position:relative;
+  display: flex;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-between;
+}
+
+.drawing-contents a {
+  width: 30%;
 }
 
 .drawing-image {
-  display: inline-flex;
+  max-width:100%;
+  height:auto;
 }
 
-.drawing-text {
+.grid .drawing-text {
   /*border: 1px solid black;*/
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+
   margin-top:30px;
   margin-left:50px;
   font-size: 0.9em;
-  font-weight: bold;
+  font-weight: normal;
   line-height: 1.6;
 }
 
-.sidebar {
+.grid .sidebar {
   /*border: 1px solid black;*/
-  padding-top: 30px;
-  padding-left: 0px;
-  z-index: 1;
-  font-weight: normal;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.sidebar {
   font-size: 0.9em;
-  position: absolute;
 }
 
 /*.section1, .section2, .section3, .section4, .section5 > li {
   font-weight: bold;
 }*/
+
 .sidebar ul {
   list-style-type: none;
+  margin-left: 0;
 }
 
 .sidebar li {
@@ -72,13 +109,12 @@ body {
   text-decoration: none;
 }
 
-a:visited {
+.sidebar a:visited {
   text-decoration: none;
   color: black;
 }
 
 .sidebar a:hover, a:active {
-  text-indent: 20px;
   text-decoration: none;
   color: #18C29C;
 }
@@ -91,8 +127,12 @@ a:visited {
   padding: 20px 0;
 }
 
+ .section6 {
+   padding-top: 60px;
+ }
+
 .section4 li{
-  padding: 2px 0px;
+  padding: 4px 0px;
 }
 
 footer {
