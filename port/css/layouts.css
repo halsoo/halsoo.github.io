@@ -51,6 +51,8 @@ body {
   justify-content: space-around;
   align-items: center;
   align-content: space-between;
+
+  margin-top: 10px;
 }
 
 .drawing-contents a {
@@ -62,11 +64,32 @@ body {
   height:auto;
 }
 
-.grid .drawing-text a {
-  margin-top: 10px;
+.drawing-text {
+  margin-bottom: 20px;
+}
+
+.drawing-text a {
   font-size: 0.9em;
   font-weight: normal;
   line-height: 1.6;
+}
+
+.drawing-text a {
+  text-decoration: none;
+}
+
+.drawing-text a:link {
+  text-decoration: none;
+}
+
+.drawing-text a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.drawing-text a:hover, a:active {
+  text-decoration: none;
+  color: #18C29C;
 }
 
 .grid .sidebar {
