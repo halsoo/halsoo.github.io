@@ -17,7 +17,6 @@ body {
 }
 
 .grid .contents {
-  /*border: 1px solid black;*/
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 1;
@@ -25,7 +24,6 @@ body {
 }
 
 .grid .contents-text {
-  /*border: 1px solid black;*/
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 3;
@@ -40,13 +38,12 @@ body {
 }
 
 .grid .drawing-contents {
-  /*border: 1px solid black;*/
-  display: flex;
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 3;
 
+  display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
@@ -69,17 +66,16 @@ body {
 }
 
 .drawing-text a {
+  text-decoration: none;
   font-size: 0.9em;
   font-weight: normal;
   line-height: 1.6;
-}
-
-.drawing-text a {
-  text-decoration: none;
+  color: black;
 }
 
 .drawing-text a:link {
   text-decoration: none;
+  color: black;
 }
 
 .drawing-text a:visited {
@@ -103,10 +99,6 @@ body {
 .sidebar {
   font-size: 0.9em;
 }
-
-/*.section1, .section2, .section3, .section4, .section5 > li {
-  font-weight: bold;
-}*/
 
 .sidebar ul {
   list-style-type: none;
