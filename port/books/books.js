@@ -21,7 +21,7 @@ function fifty_count_down() {
   fifty_show();
 }
 
-function fifty_count_up() {\
+function fifty_count_up() {
   if(fifty_pg == fifty_img.length) fifty_pg = 0;
   else {
     fifty_pg ++;
@@ -29,7 +29,7 @@ function fifty_count_up() {\
   fifty_show();
 }
 
-fuction fifty_show() {
+function fifty_show() {
   document.getElementById("fifty_pg_count").innerHTML = fifty_pg + "of" + fifty_img.length;
   document.getElementById("fifty_img").alt = fifty_pg;
   document.getElementById("fifty_img").src = fifty_img[fifty_pg];
