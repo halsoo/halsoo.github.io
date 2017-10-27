@@ -37,7 +37,7 @@ body {
 
 }
 
-.grid .drawing-contents {
+.grid .drawing-contents .drawings {
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 1;
@@ -52,17 +52,33 @@ body {
   margin-top: 10px;
 }
 
-.drawing-contents a {
+.drawings a {
   width: 30%;
 }
 
-.drawing-image {
+.drawing-whole {
   max-width:100%;
   height:auto;
 }
 
+.drawing-image {
+  max-width:50%;
+  height:auto;
+}
+
+.fifty-image {
+  max-width: 40%;
+  height:auto;
+}
+
+.poem-image {
+  max-width: 70%;
+  height:auto;
+}
+
 .drawing-text {
-  margin-bottom: 20px;
+  margin-left: 100px;
+  margin-bottom: 40px;
 }
 
 .drawing-text a {
