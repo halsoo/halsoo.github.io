@@ -1,3 +1,4 @@
+//functions for section4, <50 quetions>
 var fifty_pg = 0;
 var fifty_img = ["../books_img/50quetions/00.jpg", "../books_img/50quetions/01.jpg", "../books_img/50quetions/02.jpg",
 "../books_img/50quetions/03.jpg", "../books_img/50quetions/04.jpg", "../books_img/50quetions/05.jpg",
@@ -32,7 +33,7 @@ function fifty_show() {
   document.getElementById("fifty_img").src = fifty_img[fifty_pg];
 }
 
-
+//functions for section4, <how to write a poem>
 var poem_pg = 0;
 var poem_img = ["../books_img/how_to_write_a_poem/01.jpg", "../books_img/how_to_write_a_poem/02.jpg", "../books_img/how_to_write_a_poem/03.jpg",
 "../books_img/how_to_write_a_poem/04.jpg", "../books_img/how_to_write_a_poem/05.jpg", "../books_img/how_to_write_a_poem/06.jpg",
