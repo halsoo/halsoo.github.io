@@ -62,22 +62,14 @@ body {
 }
 
 .drawing-image {
-  max-width:50%;
-  height:auto;
-}
-
-.fifty-image {
-  max-width: 40%;
-  height:auto;
-}
-
-.poem-image {
-  max-width: 70%;
-  height:auto;
+  display: block;
+  margin:auto;
+  max-width:auto;
+  height: 80vh;
 }
 
 .drawing-text {
-  margin-left: 100px;
+  text-align: center;
   margin-bottom: 40px;
 }
 

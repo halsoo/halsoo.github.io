@@ -21,7 +21,7 @@ function fifty_count_down() {
 }
 
 function fifty_count_up() {
-  if(fifty_pg == fifty_img.length) fifty_pg = 0;
+  if(fifty_pg == (fifty_img.length-1)) fifty_pg = 0;
   else fifty_pg ++;
   fifty_show();
 }
@@ -64,7 +64,7 @@ function poem_count_down() {
 }
 
 function poem_count_up() {
-  if(poem_pg == poem_img.length) poem_pg = 0;
+  if(poem_pg == (poem_img.length-1)) poem_pg = 0;
   else poem_pg ++;
   poem_show();
 }
