@@ -1,5 +1,6 @@
 //functions for section4, <50 quetions>
 var fifty_pg = 0;
+var fifty_next_img;
 var fifty_img = ["../books_img/50quetions/00.jpg", "../books_img/50quetions/01.jpg", "../books_img/50quetions/02.jpg",
 "../books_img/50quetions/03.jpg", "../books_img/50quetions/04.jpg", "../books_img/50quetions/05.jpg",
 "../books_img/50quetions/06.jpg", "../books_img/50quetions/07.jpg", "../books_img/50quetions/08.jpg",
@@ -24,6 +25,10 @@ function fifty_count_down() {
 function fifty_count_up() {
   if(fifty_pg == (fifty_img.length-1)) fifty_pg = 0;
   else fifty_pg ++;
+  if (fifty_pg != fifty_img.length) {
+    fifty_next_img = new Image();
+    fifty_next_img.src = fifty_img[fifty_pg+1];
+  }
   fifty_show();
 }
 
@@ -35,6 +40,7 @@ function fifty_show() {
 
 //functions for section4, <how to write a poem>
 var poem_pg = 0;
+var poem_next_img;
 var poem_img = ["../books_img/how_to_write_a_poem/01.jpg", "../books_img/how_to_write_a_poem/02.jpg", "../books_img/how_to_write_a_poem/03.jpg",
 "../books_img/how_to_write_a_poem/04.jpg", "../books_img/how_to_write_a_poem/05.jpg", "../books_img/how_to_write_a_poem/06.jpg",
 "../books_img/how_to_write_a_poem/07.jpg", "../books_img/how_to_write_a_poem/08.jpg", "../books_img/how_to_write_a_poem/09.jpg",
@@ -67,6 +73,10 @@ function poem_count_down() {
 function poem_count_up() {
   if(poem_pg == (poem_img.length-1)) poem_pg = 0;
   else poem_pg ++;
+  if (fifty_pg != poem_img.length) {
+    poem_next_img = new Image();
+    poem_next_img.src = poem_img[poem_pg+1];
+  }
   poem_show();
 }
 
