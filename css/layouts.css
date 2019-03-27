@@ -52,9 +52,49 @@ body {
   margin-top: 20px;
 }
 
+.grid .books-contents .booksList{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-between;
+
+  margin-top: 40px;
+}
+
+.grid .designs-contents .designsCategory{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-end;
+  align-content: space-between;
+
+  margin-top: 40px;
+}
+
 .drawings a {
   width: 30%;
   margin-bottom: 30px;
+}
+
+.booksCard {
+  max-width:30%;
+  height:auto;
+}
+
+.designsCard {
+  max-width:30%;
+  height:auto;
 }
 
 .drawing-whole {
@@ -62,7 +102,61 @@ body {
   height:auto;
 }
 
+.books-whole {
+  max-width:100%;
+  height:auto;
+}
+
+.designs-whole {
+  max-width:100%;
+  height:auto;
+}
+
+.designs-whole-ticket {
+  max-width:49%;
+  height:auto;
+  display: inline;
+}
+
+.booksTitle {
+  text-align: center;
+  font-size: 0.8em;
+  margin-bottom: 30px;
+}
+
+.designsTitle {
+  text-align: center;
+  font-size: 0.8em;
+  margin-bottom: 30px;
+}
+
+.designsTitle a {
+  text-decoration: none;
+}
+
+.designsTitle a:link {
+  text-decoration: none;
+  color: black;
+}
+
+.designsTitle a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.designsTitle a:hover, a:active {
+  text-decoration: none;
+  color: #18C29C;
+}
+
 .drawing-image {
+  display: block;
+  margin:auto;
+  max-width:auto;
+  height: 80vh;
+}
+
+.designs-image {
   display: block;
   margin:auto;
   max-width:auto;
@@ -98,6 +192,33 @@ body {
 }
 
 .drawing-text a:hover, a:active {
+  text-decoration: none;
+  color: #18C29C;
+}
+
+.designs-text {
+  text-align: center;
+}
+
+.designs-text a {
+  text-decoration: none;
+  font-size: 0.9em;
+  font-weight: normal;
+  line-height: 1.5;
+  color: black;
+}
+
+.designs-text a:link {
+  text-decoration: none;
+  color: black;
+}
+
+.designs-text a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.designs-text a:hover, a:active {
   text-decoration: none;
   color: #18C29C;
 }
@@ -156,7 +277,7 @@ body {
    line-height: 1.6em;
  }
 
-.section4 li{
+.section4 li, .section5 li{
   padding: 4px 0px;
 }
 
